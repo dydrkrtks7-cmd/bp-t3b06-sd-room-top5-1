@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · t3b06-sd-room-top5-1</title>
+  <meta name="description" content="t3b06-sd-room-top5-1에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sindorim-review-room.namanavi.com/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* CSS Reset & Variable Definitions (Swiss Minimal + Terminal Mono) */
+ :root {
+ --bg-primary: #ffffff;
+ --bg-secondary: #f9f9f9;
+ --text-primary: #111111;
+ --text-secondary: #666666;
+ --text-muted: #888888;
+ --border-color: #e5e5e5;
+ --border-dark: #111111;
+ --accent-color: #111111;
+ --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+ --font-mono: "SF Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+ --spacing-unit: 8px;
+ }
+
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+ body {
+ font-family: var(--font-sans);
+ background-color: var(--bg-primary);
+ color: var(--text-primary);
+ line-height: 1.6;
+ -webkit-font-smoothing: antialiased;
+ }
+
+ /* Layout Container */
+ .r-item-nawr {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 calc(var(--spacing-unit) * 4);
+ }
+
+ /* Header & Navigation */
+ .t-item-lwag {
+ border-bottom: 1px solid var(--border-color);
+ position: sticky;
+ top: 0;
+ background-color: rgba(255, 255, 255, 0.95);
+ backdrop-filter: blur(8px);
+ z-index: 100;
+ }
+
+ .q-top-u90x {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 72px;
+ }
+
+ .logo-area {
+ font-family: var(--font-mono);
+ font-weight: 700;
+ font-size: 1.1rem;
+ letter-spacing: -0.05em;
+ text-transform: uppercase;
+ }
+
+ .logo-area a {
+ color: var(--text-primary);
+ text-decoration: none;
+ }
+
+ .nav-links {
+ display: flex;
+ gap: calc(var(--spacing-unit) * 4);
+ }
+
+ .nav-links a {
+ font-size: 0.9rem;
+ color: var(--text-secondary);
+ text-decoration: none;
+ font-weight: 500;
+ transition: color 0.2s ease;
+ }
+
+ .nav-links a:hover, .nav-links a.active {
+ color: var(--text-primary);
+ }
+
+ /* Hero Section */
+ .hero-section {
+ padding: calc(var(--spacing-unit) * 12) 0 calc(var(--spacing-unit) * 8);
+ border-bottom: 1px solid var(--border-dark);
+ }
+
+ .meta-tag {
+ font-family: var(--font-mono);
+ font-size: 0.8rem;
+ text-transform: uppercase;
+ color: var(--text-muted);
+ margin-bottom: calc(var(--spacing-unit) * 2);
+ display: block;
+ letter-spacing: 0.1em;
+ }
+
+ .hero-title {
+ font-size: clamp(2rem, 5vw, 3.5rem);
+ font-weight: 800;
+ line-height: 1.15;
+ letter-spacing: -0.03em;
+ margin-bottom: calc(var(--spacing-unit) * 4);
+ word-break: keep-all;
+ }
+
+ .hero-desc {
+ font-size: clamp(1.1rem, 2vw, 1.3rem);
+ color: var(--text-secondary);
+ max-width: 800px;
+ font-weight: 400;
+ line-height: 1.5;
+ }
+
+ /* Editorial Content Grid */
+ .content-grid {
+ display: grid;
+ grid-template-columns: 280px 1fr;
+ gap: calc(var(--spacing-unit) * 8);
+ padding: calc(var(--spacing-unit) * 10) 0;
+ }
+
+ /* Sidebar info */
+ .editorial-sidebar {
+ position: sticky;
+ top: 110px;
+ height: fit-content;
+ }
+
+ .sidebar-title {
+ font-family: var(--font-mono);
+ font-size: 0.75rem;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ color: var(--text-muted);
+ border-bottom: 1px solid var(--border-color);
+ padding-bottom: calc(var(--spacing-unit) * 2);
+ margin-bottom: calc(var(--spacing-unit) * 3);
+ }
+
+ .index-list {
+ list-style: none;
+ }
+
+ .index-list li {
+ margin-bottom: calc(var(--spacing-unit) * 2);
+ }
+
+ .index-list a {
+ font-size: 0.9rem;
+ color: var(--text-secondary);
+ text-decoration: none;
+ transition: color 0.2s;
+ }
+
+ .index-list a:hover {
+ color: var(--text-primary);
+ }
+
+ /* Main Editorial Body */
+ .editorial-body {
+ max-width: 800px;
+ }
+
+ .section-block {
+ margin-bottom: calc(var(--spacing-unit) * 10);
+ }
+
+ .section-num {
+ font-family: var(--font-mono);
+ font-size: 0.9rem;
+ color: var(--text-primary);
+ display: block;
+ margin-bottom: calc(var(--spacing-unit) * 2);
+ }
+
+ .section-heading {
+ font-size: 1.8rem;
+ font-weight: 700;
+ letter-spacing: -0.02em;
+ margin-bottom: calc(var(--spacing-unit) * 3);
+ border-bottom: 1px solid var(--border-color);
+ padding-bottom: calc(var(--spacing-unit) * 2);
+ }
+
+ .paragraph {
+ font-size: 1.05rem;
+ color: var(--text-secondary);
+ margin-bottom: calc(var(--spacing-unit) * 3);
+ text-align: justify;
+ }
+
+ /* Data Matrix Table */
+ .data-table-container {
+ margin: calc(var(--spacing-unit) * 4) 0;
+ overflow-x: auto;
+ border: 1px solid var(--border-color);
+ }
+
+ .data-table {
+ width: 100%;
+ border-collapse: collapse;
+ text-align: left;
+ font-size: 0.9rem;
+ }
+
+ .data-table th {
+ background-color: var(--bg-secondary);
+ font-family: var(--font-mono);
+ font-weight: 600;
+ padding: calc(var(--spacing-unit) * 2);
+ border-bottom: 1px solid var(--border-dark);
+ text-transform: uppercase;
+ font-size: 0.8rem;
+ }
+
+ .data-table td {
+ padding: calc(var(--spacing-unit) * 2);
+ border-bottom: 1px solid var(--border-color);
+ color: var(--text-secondary);
+ }
+
+ .data-table tr:last-child td {
+ border-bottom: none;
+ }
+
+ /* Highlight Card */
+ .v-img-kn3e {
+ background-color: var(--bg-secondary);
+ border-left: 4px solid var(--border-dark);
+ padding: calc(var(--spacing-unit) * 4);
+ margin: calc(var(--spacing-unit) * 6) 0;
+ position: relative;
+ }
+
+ .v-img-kn3e-title {
+ font-weight: 700;
+ font-size: 1.1rem;
+ margin-bottom: calc(var(--spacing-unit) * 1);
+ }
+
+ /* FAQ Accordion List */
+ .faq-list {
+ margin-top: calc(var(--spacing-unit) * 4);
+ }
+
+ .faq-item {
+ border-bottom: 1px solid var(--border-color);
+ padding: calc(var(--spacing-unit) * 3) 0;
+ }
+
+ .faq-question {
+ font-weight: 700;
+ font-size: 1.1rem;
+ margin-bottom: calc(var(--spacing-unit) * 1.5);
+ display: flex;
+ gap: calc(var(--spacing-unit) * 2);
+ }
+
+ .faq-question::before {
+ content: "Q.";
+ font-family: var(--font-mono);
+ color: var(--text-muted);
+ }
+
+ .faq-answer {
+ color: var(--text-secondary);
+ font-size: 0.95rem;
+ padding-left: calc(var(--spacing-unit) * 4);
+ line-height: 1.6;
+ }
+
+ /* CTA Button Area */
+ .cta-container {
+ border-top: 1px solid var(--border-dark);
+ padding: calc(var(--spacing-unit) * 8) 0;
+ text-align: center;
+ }
+
+ .m-btn-mrg0 {
+ display: inline-block;
+ background-color: var(--accent-color);
+ padding: calc(var(--spacing-unit) * 2.5) calc(var(--spacing-unit) * 6);
+ border: 1px solid var(--border-dark);
+ transition: background-color 0.2s, color 0.2s;
+ }
+
+ .m-btn-mrg0 a {
+ color: var(--bg-primary);
+ text-decoration: none;
+ font-weight: 600;
+ font-size: 1rem;
+ letter-spacing: 0.05em;
+ }
+
+ .m-btn-mrg0:hover {
+ background-color: var(--bg-primary);
+ }
+
+ .m-btn-mrg0:hover a {
+ color: var(--text-primary);
+ }
+
+ /* Footer */
+ .footer-area {
+ border-top: 1px solid var(--border-color);
+ background-color: var(--bg-secondary);
+ padding: calc(var(--spacing-unit) * 8) 0;
+ font-size: 0.85rem;
+ color: var(--text-muted);
+ }
+
+ .footer-grid {
+ display: grid;
+ grid-template-columns: 2fr 1fr;
+ gap: calc(var(--spacing-unit) * 4);
+ }
+
+ .footer-info p {
+ margin-bottom: calc(var(--spacing-unit) * 1.5);
+ }
+
+ /* Responsive Design */
+ @media (max-width: 768px) {
+ .content-grid {
+ grid-template-columns: 1fr;
+ gap: calc(var(--spacing-unit) * 4);
+ }
+
+ .editorial-sidebar {
+ position: static;
+ margin-bottom: calc(var(--spacing-unit) * 4);
+ }
+
+ .hero-section {
+ padding: calc(var(--spacing-unit) * 8) 0 calc(var(--spacing-unit) * 4);
+ }
+
+ .footer-grid {
+ grid-template-columns: 1fr;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · t3b06-sd-room-top5-1">
+  <meta property="og:description" content="t3b06-sd-room-top5-1에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sindorim-review-room.namanavi.com/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header class="t-item-lwag">
+ <div class="r-item-nawr q-top-u90x">
+ <div class="logo-area">
+ <a href="/">SINDORIM ANALYSIS</a>
+ </div>
+ <nav class="nav-links">
+ <a href="/" class="active">가이드 및 분석</a>
+ <a href="#framework">5대 평가 기준</a>
+ <a href="#faq">자주 묻는 질문</a>
+ </nav>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 33개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0001.html">신도림 룸싸롱 TOP5 관련 망원 노래방 추천정보 및 이용 팁</a>
+        <p class="post-item__summary">친구들과 갑작스럽게 망원동에서 모임을 갖게 되면 어디로 가야 할지 고민하는 경우가 많습니다. 인터넷상에 떠도는 신도림 룸싸롱 TOP5 같은 정보들은 지역적 특색이 완전히 달라 망원 지역에는 그대로 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0002.html">신도림 룸싸롱 TOP5 키워드로 알아보는 홍대 노래방 추천정보와 이용 팁</a>
+        <p class="post-item__summary">흔히 검색어 상단에 노출되는 신도림 룸싸롱 TOP5 같은 키워드들을 보고 유흥 업소만을 떠올리는 것은 일반적인 오해입니다. 사실 많은 사용자가 이러한 검색어를 활용해 건전한 놀이 문화나 노래방 서비</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0003.html">신도림 룸싸롱 TOP5 검색자가 알아야 할 공덕 셔츠룸 추천정보 가이드</a>
+        <p class="post-item__summary">완벽한 모임을 위해서는 공간의 쾌적함, 합리적인 비용, 그리고 접근성이라는 충족 조건들이 조화롭게 어우러져야 합니다. 신도림 룸싸롱 TOP5 정보를 찾던 분들이 공덕 지역의 매장을 고려할 때도 이러</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0004.html">신도림 룸싸롱 TOP5 비교를 통해 알아보는 연남 유흥 추천정보 핵심</a>
+        <p class="post-item__summary">여러분은 유흥 장소를 선택할 때 무엇을 가장 우선순위에 두고 고민하시나요. 신도림 룸싸롱 TOP5와 같은 일반적인 순위 정보는 참고만 할 뿐, 연남동만의 개성 넘치는 유흥 문화를 제대로 이해하기에는</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0005.html">신도림 룸싸롱 TOP5: 마곡 가라오케, 후기 신뢰도 판별 절차</a>
+        <p class="post-item__summary">즐거운 시간을 보내기 위해 마곡 지역의 가라오케를 찾으시는 분들이 많습니다. 하지만 수많은 정보 속에서 어떤 곳이 정말 괜찮은지, 어떤 후기가 믿을 만한지 판별하는 것은 쉽지 않은 일입니다. 특히 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0006.html">신도림 룸싸롱 TOP5: 마곡 유흥, 가격 판단 기준 비교 정보</a>
+        <p class="post-item__summary">마곡 지역에서 유흥 업소를 선택할 때 가장 중요한 고려사항 중 하나는 바로 가격입니다. 가격만 보고 섣불리 결정하기보다는, 합리적인 가격 판단 기준을 세우고 여러 요소를 비교해보는 것이 중요합니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0007.html">신도림 룸싸롱 TOP5: 합정 노래방, 예약 절차 실패 지점 짚어보기</a>
+        <p class="post-item__summary">합정에서 즐거운 노래방 시간을 보내기 위해 예약을 시도하지만, 예상치 못한 문제로 실패하는 경우가 종종 발생합니다. 이러한 실패는 대부분 예약 절차의 특정 단계에서 발생하는 오류 때문입니다. 미리 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0008.html">신도림 룸싸롱 TOP5: 연남 클럽, 위치와 접근성 체크리스트</a>
+        <p class="post-item__summary">연남동에서 멋진 클럽 경험을 하고 싶다면, 단순히 시설이나 음악만을 고려해서는 안 됩니다. 위치와 접근성은 즐거운 밤을 보내는 데 있어 매우 중요한 요소이며, 이를 꼼꼼히 확인하는 체크리스트를 준비</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0009.html">신도림 룸싸롱 TOP5 관련 합정 셔츠룸 추천정보 및 이용 안내</a>
+        <p class="post-item__summary">오랜만에 만난 지인들과 저녁 식사 후 2차 장소를 물색할 때면 누구나 고민에 빠지게 됩니다. 특히 격식 있는 자리나 특별한 분위기를 원하는 경우 선택지가 좁아지는데, 최근에는 신도림 룸싸롱 TOP5</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0010.html">신도림 룸싸롱 TOP5 외에 공덕 가라오케 추천정보 찾는 법</a>
+        <p class="post-item__summary">많은 이들이 유흥 업소에 대해 가지고 있는 흔한 오해 중 하나는 가격이 모든 곳에서 비슷할 것이라는 점입니다. 신도림 룸싸롱 TOP5 목록만 보고 무작정 이동하기보다는, 각 지역이 가진 특유의 서비</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0011.html">신도림 룸싸롱 TOP5 말고 상수 마사지 추천정보 활용하기</a>
+        <p class="post-item__summary">건강과 힐링을 위해 적절한 휴식처를 찾을 때 가장 중요한 것은 충족 조건을 나열하며 기준을 잡는 일입니다. 신도림 룸싸롱 TOP5 리스트와는 성격이 다르지만, 상수 지역의 마사지 숍 역시 방문객의 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-001-1syjgbc.html">신도림 룸싸롱 TOP5</a>
+        <p class="post-item__summary">신도림은 교통의 요지로서 많은 직장인이 퇴근 후 회식이나 비즈니스 미팅을 위해 찾는 대표적인 장소입니다. 다양한 유흥 문화가 공존하는 이곳에서 룸싸롱을 선택할 때는 접근성과 서비스의 질을 가장 먼저</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/review-001-1h3dkd3.html">신도림 룸싸롱 TOP5 솔직 후기</a>
+        <p class="post-item__summary">신도림 지역은 교통의 요지이자 유동 인구가 많은 곳인 만큼 다양한 유흥 업소가 밀집해 있습니다. 그중에서도 룸싸롱을 찾으시는 분들은 서비스의 질과 환경의 청결도, 그리고 접근성을 최우선으로 고려하게</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
