@@ -21,6 +21,51 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://sindorim-review-room.namanavi.com/posts/gemini-coverage-20260719-0105.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sindorim-review-room.namanavi.com/posts/gemini-coverage-20260719-0106.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sindorim-review-room.namanavi.com/posts/gemini-coverage-20260719-0108.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sindorim-review-room.namanavi.com/posts/gemini-coverage-20260721-0176.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sindorim-review-room.namanavi.com/posts/gemini-coverage-20260721-0177.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sindorim-review-room.namanavi.com/posts/gemini-coverage-20260722-0005.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sindorim-review-room.namanavi.com/posts/myth-001-1syjgbc.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sindorim-review-room.namanavi.com/posts/review-001-1h3dkd3.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sindorim-review-room.namanavi.com/posts.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://sindorim-review-room.namanavi.com/posts/gemini-coverage-20260719-0097.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -61,22 +106,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://sindorim-review-room.namanavi.com/posts/gemini-coverage-20260719-0105.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://sindorim-review-room.namanavi.com/posts/gemini-coverage-20260719-0106.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://sindorim-review-room.namanavi.com/posts/gemini-coverage-20260719-0107.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://sindorim-review-room.namanavi.com/posts/gemini-coverage-20260719-0108.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -97,16 +127,6 @@
   </url>
   <url>
     <loc>https://sindorim-review-room.namanavi.com/posts/gemini-coverage-20260719-0112.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://sindorim-review-room.namanavi.com/posts/gemini-coverage-20260721-0176.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://sindorim-review-room.namanavi.com/posts/gemini-coverage-20260721-0177.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -132,11 +152,6 @@
   </url>
   <url>
     <loc>https://sindorim-review-room.namanavi.com/posts/gemini-coverage-20260722-0004.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://sindorim-review-room.namanavi.com/posts/gemini-coverage-20260722-0005.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -167,26 +182,6 @@
   </url>
   <url>
     <loc>https://sindorim-review-room.namanavi.com/posts/gemini-coverage-20260722-0011.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://sindorim-review-room.namanavi.com/posts/myth-001-1syjgbc.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://sindorim-review-room.namanavi.com/posts/review-001-1h3dkd3.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://sindorim-review-room.namanavi.com/posts.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://sindorim-review-room.namanavi.com/posts-2.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
